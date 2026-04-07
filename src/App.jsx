@@ -1,17 +1,33 @@
-import { useState } from 'react'
-import './App.css'
-import Navbar from './components/Navbar'
+import { useState } from "react";
+import Navbar from "./components/Navbar";
+import Sidebar from "./components/Sidebar";
+import Dashboard from "./components/Dashboard";
+import AddProduct from "./components/Addproduct";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [showForm, setShowForm] = useState(false);
 
   return (
-    <>
-      <Navbar/>
+    <div>
 
+      <Navbar />
 
-    </>
-  )
+      <div style={{ display: "flex" }}>
+        <Sidebar />
+
+        <div style={{ flex: 1, padding: "20px" }}>
+
+          {showForm ? (
+            <AddProduct setShowForm={setShowForm} />
+          ) : (
+            <Dashboard setShowForm={setShowForm} />
+          )}
+
+        </div>
+      </div>
+
+    </div>
+  );
 }
 
-export default App
+export default App;

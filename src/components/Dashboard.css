@@ -1,0 +1,24 @@
+
+.dashboard {
+  padding: 20px;
+  color: white;
+  background: #0b0f1a;
+  min-height: 100vh;
+}
+
+/* Header */
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.add-btn {
+  background: #a3ff12;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+

@@ -8,7 +8,7 @@
   color: white;
 }
 
-/* LOGO */
+
 .logo {
   display: flex;
   align-items: center;
@@ -27,7 +27,7 @@
   box-shadow: 0 0 10px rgba(163, 255, 18, 0.5);
 }
 
-/* SEARCH */
+
 .search-bar input {
   width: 380px;
   padding: 10px 16px;
@@ -48,14 +48,14 @@
   color: #6b7280;
 }
 
-/* RIGHT SECTION */
+
 .nav-right {
   display: flex;
   align-items: center;
   gap: 12px;
 }
 
-/* BUTTON COMMON STYLE */
+
 .warehouse-btn,
 .profile-btn {
   padding: 7px 16px;
@@ -68,7 +68,7 @@
   transition: all 0.3s ease;
 }
 
-/* HOVER EFFECT */
+
 .warehouse-btn:hover,
 .profile-btn:hover {
   background: #a3ff12;
@@ -76,18 +76,17 @@
   box-shadow: 0 0 10px rgba(163, 255, 18, 0.6);
 }
 
-/* PROFILE BUTTON TEXT FIX */
+
 .profile-btn {
-  color: #a3ff12; /* ❗ pehle black tha (fix) */
+  color: #a3ff12; 
 }
 
-/* LINK RESET (if using <a>) */
+
 .profile-btn a {
   text-decoration: none;
   color: inherit;
 }
 
-/* OPTIONAL: ACTIVE STATE */
 .warehouse-btn:active,
 .profile-btn:active {
   transform: scale(0.95);

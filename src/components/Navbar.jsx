@@ -10,12 +10,12 @@ const Navbar = () => {
         <span>STOCKR</span>
       </div>
 
-      {/* Search */}
+    
       <div className="search-bar">
         <input type="text" placeholder="search items, SKUs, categories..." />
       </div>
 
-      {/* Right Section */}
+    
       <div className="nav-right">
         <button className="warehouse-btn">warehouse A</button>
         {/* <button className="register-btn">REGISTER</button>
