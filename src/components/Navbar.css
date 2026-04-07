@@ -2,98 +2,93 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15px 25px;
-  background-color: #0b0f1a;
+  padding: 14px 25px;
+  background: #0b0f1a;
   border-bottom: 1px solid #1f2937;
   color: white;
 }
 
-/* Logo */
+/* LOGO */
 .logo {
-    
   display: flex;
   align-items: center;
-  gap: 10px;
-  font-weight: bold;
-  font-size: 20px;
+  gap: 12px;
+  font-weight: 700;
+  font-size: 22px;
   color: #a3ff12;
+  letter-spacing: 1px;
 }
 
 .logo-box {
-  width: 28px;
-  height: 28px;
-  background-color: #a3ff12;
-  border-radius: 6px;
+  width: 30px;
+  height: 30px;
+  background: linear-gradient(135deg, #a3ff12, #4ade80);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(163, 255, 18, 0.5);
 }
 
-/* Search */
+/* SEARCH */
 .search-bar input {
-  width: 350px;
-  padding: 10px 15px;
-  border-radius: 10px;
+  width: 380px;
+  padding: 10px 16px;
+  border-radius: 25px;
   border: 1px solid #1f2937;
-  background-color: #111827;
+  background: #111827;
   color: white;
   outline: none;
+  transition: 0.3s;
+}
+
+.search-bar input:focus {
+  border-color: #a3ff12;
+  box-shadow: 0 0 8px rgba(163, 255, 18, 0.4);
 }
 
 .search-bar input::placeholder {
   color: #6b7280;
 }
 
-/* Right */
+/* RIGHT SECTION */
 .nav-right {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 12px;
 }
 
-.warehouse-btn {
-  padding: 8px 15px;
-  border-radius: 20px;
+/* BUTTON COMMON STYLE */
+.warehouse-btn,
+.profile-btn {
+  padding: 7px 16px;
+  border-radius: 25px;
   border: 1px solid #a3ff12;
   background: transparent;
   color: #a3ff12;
   cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
 }
 
+/* HOVER EFFECT */
+.warehouse-btn:hover,
+.profile-btn:hover {
+  background: #a3ff12;
+  color: #000;
+  box-shadow: 0 0 10px rgba(163, 255, 18, 0.6);
+}
 
-
+/* PROFILE BUTTON TEXT FIX */
 .profile-btn {
-  padding: 8px 15px;
-  border-radius: 20px;
-  border: 1px solid #a3ff12;
-  background-color: transparent;
-  color: rgb(12, 12, 12);
-  cursor: pointer;
- 
+  color: #a3ff12; /* ❗ pehle black tha (fix) */
 }
 
-/* .register-btn {
-  padding: 8px 15px;
-  border-radius: 20px;
-  border: 1px solid #a3ff12;
-  background-color: transparent;
-  color: #a3ff12;
-  cursor: pointer;
-} */
-
-
-.warehouse-btn:hover {
-  background-color: #a3ff12;
-  color: black;
-  transition: 0.3s;
+/* LINK RESET (if using <a>) */
+.profile-btn a {
+  text-decoration: none;
+  color: inherit;
 }
 
-
-/* .profile {
-  width: 35px;
-  height: 35px;
-  background-color: #a3ff12;
-  color: black;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-} */
+/* OPTIONAL: ACTIVE STATE */
+.warehouse-btn:active,
+.profile-btn:active {
+  transform: scale(0.95);
+}
