@@ -1,0 +1,94 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 25px;
+  background-color: #0b0f1a;
+  border-bottom: 1px solid #1f2937;
+  color: white;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  color: #a3ff12;
+}
+
+.logo-box {
+  width: 28px;
+  height: 28px;
+  background-color: #a3ff12;
+  border-radius: 6px;
+}
+
+/* Search */
+.search-bar input {
+  width: 350px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: 1px solid #1f2937;
+  background-color: #111827;
+  color: white;
+  outline: none;
+}
+
+.search-bar input::placeholder {
+  color: #6b7280;
+}
+
+/* Right */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.warehouse-btn {
+  padding: 8px 15px;
+  border-radius: 20px;
+  border: 1px solid #a3ff12;
+  background: transparent;
+  color: #a3ff12;
+  cursor: pointer;
+}
+
+/* .login-btn {
+  padding: 8px 15px;
+  border-radius: 20px;
+  border: 1px solid #a3ff12;
+  background-color: #a3ff12;
+  color: black;
+  cursor: pointer;
+}
+
+.register-btn {
+  padding: 8px 15px;
+  border-radius: 20px;
+  border: 1px solid #a3ff12;
+  background-color: transparent;
+  color: #a3ff12;
+  cursor: pointer;
+} */
+
+
+.warehouse-btn:hover {
+  background-color: #a3ff12;
+  color: black;
+  transition: 0.3s;
+}
+
+/* .profile {
+  width: 35px;
+  height: 35px;
+  background-color: #a3ff12;
+  color: black;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+} */
