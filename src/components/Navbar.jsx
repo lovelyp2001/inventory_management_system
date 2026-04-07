@@ -1,4 +1,4 @@
-import React from "react";
+
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -20,9 +20,9 @@ const Navbar = () => {
         <button className="warehouse-btn">warehouse A</button>
         {/* <button className="register-btn">REGISTER</button>
         <button className="login-btn">LOGIN</button> */}
-        <button className="profile"><a href="">login</a>
-        
-        <a href="">register</a></button>
+        <button className="profile-btn"><a href="">login /</a>
+
+        <a href=""> register</a></button>
       </div>
     </div>
   );
