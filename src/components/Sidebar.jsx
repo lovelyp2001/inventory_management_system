@@ -1,31 +1,28 @@
-
 import "./Sidebar.css";
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   return (
     <div className="sidebar">
-
-      {/* Section */}
       <div className="menu">
 
         <p className="menu-title">OVERVIEW</p>
 
-        <div className="menu-item active">
-          ● Dashboard
+        <div className="menu-item">
+          <Link to="/">● Dashboard</Link>
         </div>
 
         <div className="menu-item">
-          ● Inventory 
-        </div>
+  <Link to="/inventory">● Inventory</Link>
+</div>
 
-        <div className="menu-item">● Categories</div>
+        <div className="menu-item">
+          <Link to="/categories">● Categories</Link>
+        </div>
 
         <p className="menu-title">OPERATIONS</p>
 
-        <div className="menu-item">
-          ● Purchase Orders 
-        </div>
-
+        <div className="menu-item">● Purchase Orders</div>
         <div className="menu-item">● Transfers</div>
         <div className="menu-item">● Adjustments</div>
 
@@ -35,7 +32,6 @@ const Sidebar = () => {
         <div className="menu-item">● Audit Log</div>
 
       </div>
-
     </div>
   );
 };

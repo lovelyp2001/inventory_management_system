@@ -1,38 +1,71 @@
-
 .sidebar {
   width: 240px;
   height: 100vh;
-  background: #0b0f1a;
-  color: white;
-  padding: 20px;
-  border-right: 1px solid #1f2937;
+  background: #151523;
+  color: #fff;
+  padding: 20px 14px;
+  overflow-y: auto;
+  box-shadow: 2px 0 12px rgba(0, 0, 0, 0.25);
 }
 
-
-
-/* Menu */
+/* Section Titles */
 .menu-title {
-  font-size: 12px;
-  color: #6b7280;
-  margin: 15px 0 5px;
+  font-size: 11px;
+  color: #8b8b9a;
+  margin: 18px 8px 8px;
+  letter-spacing: 1.2px;
+  font-weight: 600;
 }
 
-.menu-item {
-  padding: 10px;
-  border-radius: 8px;
-  cursor: pointer;
-  color: #cbd5e1;
+/* Remove ugly bullets feel */
+.menu-item,
+.menu a {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  margin: 4px 0;
+  border-radius: 10px;
+  color: #cfcfe6;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.25s ease;
+  cursor: pointer;
 }
 
-.menu-item:hover {
-  background: #111827;
+/* Hover effect (premium feel) */
+.menu-item:hover,
+.menu a:hover {
+  background: #2a2a3d;
+  color: #ffffff;
+  transform: translateX(5px);
 }
 
-/* Active */
-.menu-item.active {
-  background: #1f2937;
-  color: #a3ff12;
+/* Active state (optional use class) */
+.menu-item.active,
+.menu a.active {
+  background: #4f46e5;
+  color: #fff;
+  box-shadow: 0 6px 15px rgba(79, 70, 229, 0.3);
 }
 
+/* Better spacing grouping */
+.menu {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Remove default link underline globally in sidebar */
+.sidebar a {
+  text-decoration: none;
+}
+
+/* Scrollbar styling */
+.sidebar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background: #33334d;
+  border-radius: 10px;
+}

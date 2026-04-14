@@ -1,33 +1,17 @@
 import { useState } from "react";
-import Navbar from "./components/Navbar";
-import Sidebar from "./components/Sidebar";
-import Dashboard from "./components/Dashboard";
-import AddProduct from "./components/Addproduct";
+import Auth from "./components/Auth";
+import AppRoute from "./Routes/AppRoute";
 
 function App() {
-  const [showForm, setShowForm] = useState(false);
-
-  return (
-    <div>
-
-      <Navbar />
-
-      <div style={{ display: "flex" }}>
-        <Sidebar />
-
-        <div style={{ flex: 1, padding: "20px" }}>
-
-          {showForm ? (
-            <AddProduct setShowForm={setShowForm} />
-          ) : (
-            <Dashboard setShowForm={setShowForm} />
-          )}
-
-        </div>
-      </div>
-
-    </div>
+  const [isLoggedIn, setIsLoggedIn] = useState(
+    localStorage.getItem("login") === "true"
   );
+
+  if (!isLoggedIn) {
+    return <Auth setIsLoggedIn={setIsLoggedIn} />;
+  }
+
+  return <AppRoute />;
 }
 
 export default App;

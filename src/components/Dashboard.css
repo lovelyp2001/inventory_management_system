@@ -1,24 +1,18 @@
 
-.dashboard {
+.dashboard-container {
   padding: 20px;
-  color: white;
-  background: #0b0f1a;
-  min-height: 100vh;
 }
 
-/* Header */
-.dashboard-header {
+.card-box {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
-.add-btn {
-  background: #a3ff12;
-  border: none;
-  padding: 10px 16px;
-  border-radius: 8px;
-  cursor: pointer;
+.stock-card {
+  width: 220px;
+  padding: 15px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px gray;
 }
-
-

@@ -1,0 +1,102 @@
+
+
+.categories-container {
+  background: #0f1117;
+  min-height: 100vh;
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.categories-container h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+/* 🔥 Add Product Form */
+.form-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.form-box input {
+  padding: 10px;
+  border: 1px solid #2a2d35;
+  border-radius: 8px;
+  background: #1a1d24;
+  color: white;
+  outline: none;
+}
+
+.form-box input::placeholder {
+  color: #888;
+}
+
+.form-box button {
+  background: #b6ff00;
+  color: black;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.form-box button:hover {
+  transform: scale(1.03);
+}
+
+/* 🔥 Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+thead {
+  background: #1c1f27;
+}
+
+thead th {
+  padding: 14px;
+  text-align: left;
+  font-size: 14px;
+}
+
+tbody tr {
+  border-bottom: 1px solid #2a2d35;
+}
+
+tbody tr:hover {
+  background: #181b22;
+}
+
+tbody td {
+  padding: 14px;
+  font-size: 14px;
+}
+
+/* Delete Button */
+tbody button {
+  background: #ff3b3b;
+  color: white;
+  border: none;
+  padding: 7px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+tbody button:hover {
+  opacity: 0.85;
+}
+
+/* Loading / Empty */
+.categories-container p {
+  color: #aaa;
+  font-size: 16px;
+}
