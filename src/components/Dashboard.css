@@ -1,0 +1,21 @@
+
+.dashboard-page {
+  padding: 20px;
+  color: rgb(255, 255, 255);
+}
+
+.card{
+    background-color: #89b6fa;
+    border: 2px solid #8e8c8c;
+    border-radius: 8px;
+    padding: 20px;
+    color: rgb(13, 16, 16);
+    margin-top: 30px;
+    height: 200px;
+    width: 18rem;
+}
+
+.dashboard-cards{
+    display: flex;
+    gap: 40px;
+}
